@@ -1,12 +1,14 @@
 spring:
   datasource:
     url: jdbc:postgresql://junction.proxy.rlwy.net:39952/railway
+    #url: jdbc:postgresql://postgres.railway.internal:5432/railway
+
     username: postgres
     password: ZmdcOIEsGqzprmyyodtVKmFeZkOvYxLP
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
-      ddl-auto: create # ou none, validate, create, create-drop conforme necessário
+      ddl-auto: validate # ou none, validate, create, create-drop conforme necessário
     show-sql: true
     properties:
       hibernate:
